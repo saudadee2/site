@@ -567,3 +567,113 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BÖLÜM 5 — DİNLEME SINAVI (Hören)
+     ═══════════════════════════════════════════════════════════ -->
+<div class="section-block">
+  <div class="section-header">
+    <span class="section-badge">Bölüm 5</span>
+    <h2>🎧 Dinleme Sınavı</h2>
+    <span class="pts">5 soru · 10 puan</span>
+  </div>
+
+  <div class="theory-box" style="margin-top:1.2rem;">
+    <h3>📢 Nasıl çalışır?</h3>
+    <p>
+      <strong>▶ Metni Dinle</strong> butonuna tıkla. Metin sesli okunacak.
+      İstersen birden fazla kez dinleyebilirsin. Ardından aşağıdaki soruları cevapla.
+    </p>
+  </div>
+
+  <!-- Dinleme metni (gizli) -->
+  <div id="listen-text" style="display:none;">
+    Hallo, ich bin Laura. Ich wohne in Hamburg und arbeite als Lehrerin.
+    Jeden Morgen stehe ich um sieben Uhr auf und frühstücke mit meiner Familie.
+    Mein Mann heißt Klaus und er arbeitet in einem Krankenhaus als Arzt.
+    Wir haben zwei Kinder: einen Sohn und eine Tochter.
+    Am Wochenende fahren wir oft in den Park. Manchmal besuchen wir auch meine Eltern in Berlin.
+    Meine Mutter kocht sehr gut. Ihr Lieblingsessen ist Schnitzel mit Kartoffeln.
+  </div>
+
+  <!-- Oynatıcı -->
+  <div style="text-align:center; margin: 1.5rem 0; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+    <button class="btn-check" id="btn-listen" onclick="playListenText()" style="font-size:1rem; padding:.8rem 2rem;">
+      ▶ Metni Dinle
+    </button>
+    <button class="btn-reset" id="btn-stop" onclick="stopListenText()" style="padding:.8rem 1.5rem;" disabled>
+      ⏹ Durdur
+    </button>
+  </div>
+  <div id="listen-status" style="text-align:center; color:#2d6a4f; font-weight:600; min-height:1.4rem; margin-bottom:1rem;"></div>
+
+  <!-- Sorular -->
+  <div class="questions-wrap" id="listen-wrap">
+
+    <div class="q-item" data-type="mc" data-answer="B">
+      <div class="q-num">S39</div>
+      <div class="q-text">Laura nerede yaşıyor?</div>
+      <div class="mc-options">
+        <div class="mc-option" data-val="A"><span class="mc-letter">A</span> Berlin</div>
+        <div class="mc-option" data-val="B"><span class="mc-letter">B</span> Hamburg</div>
+        <div class="mc-option" data-val="C"><span class="mc-letter">C</span> Münih</div>
+        <div class="mc-option" data-val="D"><span class="mc-letter">D</span> Frankfurt</div>
+      </div>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q-item" data-type="mc" data-answer="C">
+      <div class="q-num">S40</div>
+      <div class="q-text">Laura'nın kocası Klaus nerede çalışıyor?</div>
+      <div class="mc-options">
+        <div class="mc-option" data-val="A"><span class="mc-letter">A</span> Bir okulda</div>
+        <div class="mc-option" data-val="B"><span class="mc-letter">B</span> Bir bankada</div>
+        <div class="mc-option" data-val="C"><span class="mc-letter">C</span> Bir hastanede</div>
+        <div class="mc-option" data-val="D"><span class="mc-letter">D</span> Bir markette</div>
+      </div>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q-item" data-type="mc" data-answer="A">
+      <div class="q-num">S41</div>
+      <div class="q-text">Laura her sabah saat kaçta kalkıyor?</div>
+      <div class="mc-options">
+        <div class="mc-option" data-val="A"><span class="mc-letter">A</span> 07:00</div>
+        <div class="mc-option" data-val="B"><span class="mc-letter">B</span> 06:30</div>
+        <div class="mc-option" data-val="C"><span class="mc-letter">C</span> 08:00</div>
+        <div class="mc-option" data-val="D"><span class="mc-letter">D</span> 07:30</div>
+      </div>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q-item" data-type="mc" data-answer="D">
+      <div class="q-num">S42</div>
+      <div class="q-text">Hafta sonları aile ne yapıyor?</div>
+      <div class="mc-options">
+        <div class="mc-option" data-val="A"><span class="mc-letter">A</span> Sinemaya gidiyor</div>
+        <div class="mc-option" data-val="B"><span class="mc-letter">B</span> Alışveriş yapıyor</div>
+        <div class="mc-option" data-val="C"><span class="mc-letter">C</span> Müzeye gidiyor</div>
+        <div class="mc-option" data-val="D"><span class="mc-letter">D</span> Parka gidiyor</div>
+      </div>
+      <div class="q-feedback"></div>
+    </div>
+
+    <div class="q-item" data-type="mc" data-answer="B">
+      <div class="q-num">S43</div>
+      <div class="q-text">Laura'nın annesinin en sevdiği yemek nedir?</div>
+      <div class="mc-options">
+        <div class="mc-option" data-val="A"><span class="mc-letter">A</span> Pizza</div>
+        <div class="mc-option" data-val="B"><span class="mc-letter">B</span> Schnitzel mit Kartoffeln</div>
+        <div class="mc-option" data-val="C"><span class="mc-letter">C</span> Nudeln mit Soße</div>
+        <div class="mc-option" data-val="D"><span class="mc-letter">D</span> Suppe</div>
+      </div>
+      <div class="q-feedback"></div>
+    </div>
+
+  </div>
+
+  <div class="submit-area">
+    <button class="btn-check" onclick="checkSection('listen')">Bu bölümü kontrol et</button>
+    <button class="btn-reset" onclick="resetSection('listen')">Sıfırla</button>
+  </div>
+</div>
